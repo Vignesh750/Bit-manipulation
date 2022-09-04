@@ -1,9 +1,10 @@
 #include <iostream>
 using namespace std;
-//! Given an array of n numbers that has values in the range[1....n+1] .
+//! Given an array of n numbers that has values in the range[1....n-1] .
 //! Every number appears exactly once in the array
 //! so one number is missing
 //! Program to find that missing number
+//! The idea is based on the fact that x ^ x = 0 and if x ^ y = z then x ^ z = y
 
 int solution(int arr[], int n)
 {
@@ -19,5 +20,6 @@ int main()
 {
   int arr[] = {1, 4, 2};
   cout << solution(arr, 3);
+
   return 0;
 }
